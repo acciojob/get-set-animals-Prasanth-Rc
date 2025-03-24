@@ -1,6 +1,6 @@
 //complete this code
 class Animal {
-	private _species: string;
+  private _species: string;
 
   constructor(species: string) {
     this._species = species;
@@ -15,8 +15,8 @@ class Animal {
   }
 }
 
-class Dog extends Animal {
-	constructor(species: string) {
+class Cat extends Animal {
+  constructor(species: string) {
     super(species);
   }
 
@@ -25,8 +25,8 @@ class Dog extends Animal {
   }
 }
 
-class Cat extends Animal {
-	  constructor(species: string) {
+class Dog extends Animal {
+  constructor(species: string) {
     super(species);
   }
 
@@ -34,16 +34,6 @@ class Cat extends Animal {
     console.log("woof");
   }
 }
-
-const myCat = new Cat("Siamese");
-myCat.makeSound();
-myCat.purr();
-
-// Creating an instance of Dog
-const myDog = new Dog("Golden Retriever");
-myDog.makeSound();
-myDog.bark();  
-
 // Do not change the code below this line
 window.Animal = Animal;
 window.Dog = Dog;
